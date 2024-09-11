@@ -1,21 +1,15 @@
 import I18n from "i18n-js";
-import en from "./lang/en";
-import id from "./lang/id";
+import pt from "./lang/pt";
 
 const supportedLanguages = [
   {
-    code: "en",
-    label: "English",
-    translations: en
+    code: "pt",
+    label: "Portuguese",
+    translations: pt
   },
-  {
-    code: "id",
-    label: "Indonesia",
-    translations: id
-  }
 ];
 
-I18n.defaultLocale = "en";
+I18n.defaultLocale = "pt";
 supportedLanguages.forEach(lang => {
   I18n.translations[lang.code] = lang.translations;
 });

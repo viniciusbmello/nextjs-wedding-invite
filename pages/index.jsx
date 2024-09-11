@@ -280,7 +280,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   <video height="140" autoPlay muted loop>
                     <source src={logo.footerLogo} type="video/mp4" />
                   </video>
-                  : <img src={logo.footerLogo} />
+                  : <img width="140 "height="140" src={logo.footerLogo} />
                 )}
             </div>
             <div className="footer_title">
@@ -296,7 +296,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         }}>
           <small>
             <a style={{ color: 'grey' }} href="https://github.com/wzulfikar/nextjs-wedding-invite">
-              Built with&nbsp;<object style={{ height: "0.5rem" }} data="/assets/images/heart.svg" type="image/svg+xml"></object>&nbsp;using NextJS
+              Built with&nbsp;<object style={{ height: "0.5rem" }} data="/assets/images/heart.svg" type="image/svg+xml"></object>&nbsp;by Vinícius Mello
             </a>
           </small>
         </div>)}

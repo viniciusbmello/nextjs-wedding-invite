@@ -1,0 +1,13 @@
+{
+    "siteIntro": "NÓS VAMOS NOS CASAR",
+    "eventDate": "Data do Evento",
+    "invitationGreeting": "Querido",
+    "invitationIntro": "Você é nosso convidado mais que especial",
+    "invitationContent": "Nossa alegria só estará completa com a sua presença.",
+    "invitationContentTextAlign": "left",
+    "invitationOutro": "Esperamos por você.",
+    "btnAddToMyCalendar": "Save the date",
+    "guestCheckin": {
+      "pleaseScanInvitation": "Por favor, scaneie seu convite.."
+    }
+  }
