@@ -1,28 +1,110 @@
 /* pages/Presente.module.css */
 
 .container {
-    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.6rem;
+    color: #a88a6b;
+    margin-bottom: 20px;
   }
   
   .pixSection {
     margin: 20px 0;
   }
   
+  .pixSection p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
   .pixSection pre {
     background: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
     font-family: monospace;
     word-wrap: break-word;
+    margin: 15px 0;
+    overflow: auto; /* Adiciona rolagem se necessário */
+  }
+  
+  .copyButton {
+    background-color: #d1b598;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .copyButton:hover {
+    background-color: #a88a6b;
+  }
+  
+  .copyStatus {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: green;
   }
   
   .qrCodeSection {
+    padding-top: 20px;
     margin: 20px 0;
+  }
+  
+  .qrCodeSection p {
+    font-size: 1rem;
+    color: #666;
   }
   
   .qrCodeImage {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsivo para dispositivos móveis */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.6rem;
+    }
+  
+    .subtitle {
+      font-size: 1.4rem;
+    }
+  
+    .pixSection p {
+      font-size: 0.9rem;
+    }
+  
+    .pixSection pre {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .copyButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .copyStatus {
+      font-size: 0.8rem;
+    }
   }
   

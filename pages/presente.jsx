@@ -1,9 +1,12 @@
 import { useRouter } from 'next/router';
 import styles from './presente.module.css';
+import { useState } from 'react';
 
 const Presente = () => {
   const router = useRouter();
   const { value } = router.query;
+
+  const [copyStatus, setCopyStatus] = useState('');
 
   let pixCode;
   let qrCodeSrc;
@@ -51,17 +54,30 @@ const Presente = () => {
       break;
   }
 
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(pixCode);
+      setCopyStatus('Código copiado para a área de transferência!');
+    } catch (err) {
+      setCopyStatus('Falha ao copiar o código.');
+    }
+  };
+
   return (
     <div className={styles.container}>
-      <h1>Você escolheu presentear com o valor de:</h1>
-      <h2>R$ {value}</h2>
+      <h1 className={styles.title}>Você escolheu presentear com o valor de:</h1>
+      <h2 className={styles.subtitle}>R$ {value}</h2>
       <div className={styles.pixSection}>
-        <p>Use o seguinte código PIX para completar o pagamento (Copie e Cole):</p>
+        <p>Use o seguinte código PIX para completar o pagamento:</p>
         <pre>{pixCode}</pre>
+        <button onClick={copyToClipboard} className={styles.copyButton}>
+          Copiar Código PIX
+        </button>
+        {copyStatus && <p className={styles.copyStatus}>{copyStatus}</p>}
       </div>
-      <p>Ou escaneie o QR Code abaixo para efetuar o pagamento:</p>
       <div className={styles.qrCodeSection}>
-        <img width={500} height={500} src={qrCodeSrc} alt="QR Code indisponível" className={styles.qrCodeImage} />
+        <p>Ou escaneie o QR code abaixo para efetuar o pagamento:</p>
+        <img width={400} height={400} src={qrCodeSrc} alt="QR Code" className={styles.qrCodeImage} />
       </div>
     </div>
   );

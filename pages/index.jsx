@@ -93,7 +93,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   <div className="row justify-content-center">
                     <div className="col-lg-12">
                       <div className="slider_content text-center" style={{ paddingTop: 0 }}>
-                        <img style={{ maxHeight: 60, margin: 25, marginTop: 0 }} src={logo.headerLogo} alt="logo" />
+                        <img style={{ maxHeight: 400, margin: 25, marginTop: 0 }} src={logo.headerLogo} alt="logo" />
                         <h5
                           className="slider_sub_title"
                           data-animation="fadeInUp"
@@ -209,20 +209,10 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             <div className="row justify-content-center">
               <div className="col-lg-9">
                 <div className="section_title text-center pb-30">
-                  {guest.name && (<div style={{
-                    textAlign: 'center',
-                    maxWidth: 400,
-                    margin: 'auto',
-                    paddingBottom: 20,
-                  }}>
-                    {t('invitationGreeting')}
-                    <p style={{ fontSize: '1.5rem' }}>{guest.name},</p>
-                  </div>
-                  )}
                   <h3 className="title">{t('invitationIntro')}</h3>
                   <div style={{
                     textAlign: 'left',
-                    paddingTop: 20,
+                    paddingTop: 30,
                     paddingBottom: 20,
                     maxWidth: 400,
                     margin: 'auto',

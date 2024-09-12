@@ -9,7 +9,7 @@ const baseConfig = {
     timeEndISO: "2024-12-14T22:00:00-03:00"
   },
   coupleInfo: {
-    brideName: "Polly",
+    brideName: "Polliana",
     groomName: "Felipe",
     coupleNameFormat: "GROOM_FIRST"
   },
@@ -22,13 +22,13 @@ const baseConfig = {
     mapUrl: "https://maps.app.goo.gl/ZiuvP3X4V6Yz77Mm8"
   },
   logo: {
-    headerLogo: "/assets/images/ring-svg.png",
+    headerLogo: "/assets/images/fp-logo.png",
     footerLogo: "/assets/images/fp-logo.png",
     footerLogoType: "png"
   },
   ogTags: {
     logo: "/assets/images/aw-ring-logo.png",
-    siteName: "felipeepolly.vercel.app",
+    siteName: "felipeepolliana.vercel.app",
     publishedTime: "2024-09-11"
   }
 };
