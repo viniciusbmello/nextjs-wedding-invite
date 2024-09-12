@@ -1,0 +1,69 @@
+/* ImageGallery.module.css */
+
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .imageItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f8f8f8; /* Cor de fundo para visualização */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .labels {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .description {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .subDescription {
+    display: block;
+    font-size: 12px;
+    color: #666; /* Cor mais clara que a descrição */
+    margin-bottom: 5px;
+  }
+  
+  .value {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #a88a6b;
+  }
+  
+  .giftButton {
+    background-color: #d1b598;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .giftButton:hover {
+    background-color: #a88a6b;
+  }
+  

@@ -4,6 +4,7 @@ import useSWR from "swr";
 
 import Head from "@src/components/Head";
 import Countdown from "@src/components/Countdown";
+import ImageGallery from "@src/components/ImageGallery";
 import resolvePath from "@src/utils/resolvePath";
 import appConfig from "@src/config/app";
 import { useTranslation, defaultLocale } from "@src/i18n";
@@ -185,15 +186,15 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
 
       <section>
         <div>
-          <h1>Galeria de Presentes</h1>
-          <ImageGallery />
+          <Countdown />
         </div>
       </section>
 
 
       <section className="coming_soon_area">
-        <div>
-          <h1>Pix</h1>
+        <div className="section_title text-center pb-30 mt-40">
+        <h3 className="title">Presentes</h3>
+          <ImageGallery />
         </div>
       </section>
 
