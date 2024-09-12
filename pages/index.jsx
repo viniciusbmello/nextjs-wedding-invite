@@ -3,6 +3,7 @@ import QRCode from "qrcode.react";
 import useSWR from "swr";
 
 import Head from "@src/components/Head";
+import Countdown from "@src/components/Countdown";
 import resolvePath from "@src/utils/resolvePath";
 import appConfig from "@src/config/app";
 import { useTranslation, defaultLocale } from "@src/i18n";
@@ -182,6 +183,20 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         </div>
       </section>
 
+      <section>
+        <div>
+          <h1>Galeria de Presentes</h1>
+          <ImageGallery />
+        </div>
+      </section>
+
+
+      <section className="coming_soon_area">
+        <div>
+          <h1>Pix</h1>
+        </div>
+      </section>
+
       <section id="contact" className="contact_area">
         <div className="container">
           <div
@@ -280,7 +295,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   <video height="140" autoPlay muted loop>
                     <source src={logo.footerLogo} type="video/mp4" />
                   </video>
-                  : <img width="140 "height="140" src={logo.footerLogo} />
+                  : <img width="400" height="400" src={logo.footerLogo} />
                 )}
             </div>
             <div className="footer_title">
