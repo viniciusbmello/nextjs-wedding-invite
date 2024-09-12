@@ -1,0 +1,28 @@
+/* pages/Presente.module.css */
+
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pixSection {
+    margin: 20px 0;
+  }
+  
+  .pixSection pre {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    word-wrap: break-word;
+  }
+  
+  .qrCodeSection {
+    margin: 20px 0;
+  }
+  
+  .qrCodeImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
